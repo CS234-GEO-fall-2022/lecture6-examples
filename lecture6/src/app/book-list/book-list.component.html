@@ -1,0 +1,12 @@
+<p>book-list works!</p>
+
+
+<div style="display: flex; gap: 100px;" *ngFor="let book of bookList">
+    <div>{{book.id}}</div>
+    <div>{{book.title}}</div>
+    <div>{{book.price}}</div>
+    <button (click)="onDelete(book.id)">Delete</button>
+    <button (click)="onUpdate(book.id)">Update</button>
+</div>
+
+<button (click)="onAdd()">Add</button>
